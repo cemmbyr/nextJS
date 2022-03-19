@@ -1,0 +1,3 @@
+interface IHomepage {
+  products: []
+}
