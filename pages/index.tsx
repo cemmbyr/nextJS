@@ -20,7 +20,7 @@ const HomePage: FC<IHomepage> = ({ products }) => {
     } else {
       const filteredProduct = products.filter(
         (item: any) => {
-          return item.title.slice(0, 2).toLowerCase() === query.slice(0, 2).toLowerCase()
+          return item.title.toLowerCase().includes(query.trim().toLowerCase())
         }
       )
 
